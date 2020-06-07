@@ -15,7 +15,6 @@ while True:
     except:
         print('Invalid input')
         continue
-    print(num)
     if largest is None:
         largest=num
     if smallest is None:
@@ -25,5 +24,8 @@ while True:
     if smallest>num:
         smallest=num
 
-print("Minimum is", smallest)
+largest=int(largest)
+smallest=int(smallest)
+
 print("Maximum is", largest)
+print("Minimum is", smallest)
